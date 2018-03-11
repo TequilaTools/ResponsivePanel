@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/TequilaTools/ResponsivePanel/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/TequilaTools/ResponsivePanel</projectUrl>
+    <iconUrl>https://avatars3.githubusercontent.com/u/37250739?s=200</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>Copyright 2018</copyright>
+    <tags>WPF</tags>
+  </metadata>
+  <files>
+    <file src="bin\$configuration$\$id$.pdb" target="lib\net452\" />
+  </files>
+</package>
