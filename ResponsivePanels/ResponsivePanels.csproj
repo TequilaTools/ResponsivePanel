@@ -7,8 +7,8 @@
     <ProjectGuid>{D967155E-ABFD-4597-B54B-1D67E7F49760}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tequilla.Responsive</RootNamespace>
-    <AssemblyName>Tequilla.ResponsivePanels</AssemblyName>
+    <RootNamespace>Tequila.Responsive</RootNamespace>
+    <AssemblyName>Tequila.ResponsivePanels</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

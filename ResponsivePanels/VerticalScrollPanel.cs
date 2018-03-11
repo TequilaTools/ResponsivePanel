@@ -1,4 +1,4 @@
-﻿namespace Tequilla.Responsive
+﻿namespace Tequila.Responsive
 {
     using System;
     using System.Collections.Generic;

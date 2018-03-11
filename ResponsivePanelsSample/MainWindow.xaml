@@ -4,13 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 
-        xmlns:responsive="clr-namespace:Tequilla.Responsive;assembly=Tequilla.ResponsivePanels"
-        xmlns:responsive1="clr-namespace:Tequilla.Responsive;assembly=Tequilla.ResponsivePanels"
+        xmlns:responsive="clr-namespace:Tequila.Responsive;assembly=Tequila.ResponsivePanels"
         mc:Ignorable="d"
         Title="MainWindow" Height="528" Width="861">
     <Grid>
         
-            <responsive1:VerticalScrollPanel>
+            <responsive:VerticalScrollPanel>
             <Border x:Name="Red" Margin="5" VerticalAlignment="Top" Background="Red"  MinWidth="350">
                     <Expander IsExpanded="True">
                         <Grid  Height="250" Background="DarkRed"></Grid></Expander>
@@ -31,7 +30,7 @@
                 </Border>
             <Border x:Name="Blue"  Margin="5" VerticalAlignment="Top" Background="Blue" Height="300" MinWidth="200"></Border>
             <Border x:Name="Purple"  Margin="5" VerticalAlignment="Top" Background="Purple" Height="234" MinWidth="200"></Border>
-        </responsive1:VerticalScrollPanel>
+        </responsive:VerticalScrollPanel>
  
     </Grid>
 </Window>
