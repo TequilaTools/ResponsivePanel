@@ -347,7 +347,7 @@
             // Measure the desired size for all child elements.
             foreach ( UIElement child in InternalChildren )
             {
-                child.Measure( availableSize );
+                child.Measure( new Size(availableSize.Width, double.PositiveInfinity ));
             }
 
             var layout = new LayoutManager( availableSize );
