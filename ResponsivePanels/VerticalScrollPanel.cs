@@ -129,7 +129,7 @@
 
             // Create a new Column:
             var width = Columns.Sum( column => column.DesiredWidth );
-            if ( width + child.DesiredSize.Width < VisibleSize.Width )
+            if ( !Columns.Any() || width + child.DesiredSize.Width < VisibleSize.Width )
             {
                 var column = new Column( VisibleSize.Height );
                 Columns.Add( column );
