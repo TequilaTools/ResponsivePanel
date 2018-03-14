@@ -9,28 +9,58 @@
         Title="MainWindow" Height="528" Width="861">
     <Grid>
         
-            <responsive:VerticalScrollPanel>
-            <Border x:Name="Red" Margin="5" VerticalAlignment="Top" Background="Red"  MinWidth="350">
-                    <Expander IsExpanded="True">
-                        <Grid  Height="250" Background="DarkRed"></Grid></Expander>
-            </Border>
-            <Border x:Name="Green"  Margin="5" VerticalAlignment="Top" Background="Green" Height="198" MinWidth="300"></Border>
-            <Border x:Name="Yellow"  Margin="5" VerticalAlignment="Top" Background="Yellow" Height="156" MinWidth="300" Padding="0" BorderThickness="0">
-                <StackPanel Orientation="Horizontal">
-                    <Border VerticalAlignment="Top" Background="#333" Height="156" Width="50"/>
-                    <Border VerticalAlignment="Top" Background="#444" Height="156" Width="50"/>
-                    <Border VerticalAlignment="Top" Background="#333" Height="156" Width="50"/>
-                    <Border VerticalAlignment="Top" Background="#444" Height="156" Width="50"/>
-                    <Border VerticalAlignment="Top" Background="#333" Height="156" Width="50"/>
-                    <Border VerticalAlignment="Top" Background="#444" Height="156" Width="50"/>
-                    <Border VerticalAlignment="Top" Background="#555" Height="156" Width="50"/>
-                    
-                </StackPanel>
-                
-                </Border>
-            <Border x:Name="Blue"  Margin="5" VerticalAlignment="Top" Background="Blue" Height="300" MinWidth="200"></Border>
-            <Border x:Name="Purple"  Margin="5" VerticalAlignment="Top" Background="Purple" Height="234" MinWidth="200"></Border>
-        </responsive:VerticalScrollPanel>
- 
+        <TabControl>
+            <TabItem Header="01">
+                <responsive:VerticalScrollPanel>
+                    <Border x:Name="Red" Margin="5" VerticalAlignment="Top" Background="Red"  MinWidth="350">
+                        <Expander IsExpanded="True">
+                            <Grid  Height="250" Background="DarkRed"></Grid>
+                        </Expander>
+                    </Border>
+                    <Border x:Name="Green"  Margin="5" VerticalAlignment="Top" Background="Green" Height="198" MinWidth="300"></Border>
+                    <Border x:Name="Yellow"  Margin="5" VerticalAlignment="Top" Background="Yellow" Height="156" MinWidth="300" Padding="0" BorderThickness="0">
+                        <StackPanel Orientation="Horizontal">
+                            <Border VerticalAlignment="Top" Background="#333" Height="156" Width="50"/>
+                            <Border VerticalAlignment="Top" Background="#444" Height="156" Width="50"/>
+                            <Border VerticalAlignment="Top" Background="#333" Height="156" Width="50"/>
+                            <Border VerticalAlignment="Top" Background="#444" Height="156" Width="50"/>
+                            <Border VerticalAlignment="Top" Background="#333" Height="156" Width="50"/>
+                            <Border VerticalAlignment="Top" Background="#444" Height="156" Width="50"/>
+                            <Border VerticalAlignment="Top" Background="#555" Height="156" Width="50"/>
+
+                        </StackPanel>
+
+                    </Border>
+                    <Border x:Name="Blue"  Margin="5" VerticalAlignment="Top" Background="Blue" Height="300" MinWidth="200"></Border>
+                    <Border x:Name="Purple"  Margin="5" VerticalAlignment="Top" Background="Purple" Height="234" MinWidth="200"></Border>
+                    <Border x:Name="CollapsedPanel"  Margin="5" VerticalAlignment="Top" Background="Goldenrod" Height="234" MinWidth="200" Visibility="Collapsed"></Border>
+                </responsive:VerticalScrollPanel>
+            </TabItem>
+
+            <TabItem Header="02">
+                <responsive:VerticalScrollPanel>
+                    <Border Margin="5" VerticalAlignment="Top" Background="Purple">
+                        <DockPanel>
+                            <Border Background="AliceBlue" DockPanel.Dock="Top">
+                                <TextBlock>HELLO</TextBlock>
+                            </Border>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="WORLD"/>
+                                <Button Content="Example" />
+                            </StackPanel>
+                        </DockPanel>
+                        
+                    </Border>
+                    <Border VerticalAlignment="Top" Background="#555" Height="300" />
+                </responsive:VerticalScrollPanel>
+            </TabItem>
+
+            <TabItem Header="03">
+                <responsive:VerticalScrollPanel>
+                    <Border VerticalAlignment="Top" Background="Violet" Height="300" />
+                </responsive:VerticalScrollPanel>
+            </TabItem>
+
+        </TabControl>
     </Grid>
 </Window>
