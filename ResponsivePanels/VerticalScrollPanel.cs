@@ -271,6 +271,11 @@
         /// </returns>
         public bool CanAccomodate( UIElement element )
         {
+            if (element.DesiredSize.Height <= 0)
+            {
+                return true;
+            }
+
             return DesiredHeight + element.DesiredSize.Height <= VisibleHeight;
         }
     }
